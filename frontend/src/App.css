@@ -1,0 +1,97 @@
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.App {
+	min-height: max-content;
+	width: 660px;
+	overflow-x: hidden;
+	-webkit-box-shadow: 0px 0px 10px #eeeeee;
+			box-shadow: 0px 0px 10px #eeeeee;
+  }
+  
+  .App ::-webkit-scrollbar {
+	display: none;
+  }
+
+  .dogProfile {
+	text-align: center;
+	position: relative;
+	width: 100%;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .dogProfile h1 {
+	font-family: "Jost", sans-serif;
+	color: #577590;
+	font-weight: 400;
+  }
+  
+  .dogProfile h2 {
+	font-family: "Jost", sans-serif;
+	color: #577590;
+	font-weight: 400;
+	margin-top: 0;
+  }
+  
+  .dogProfile .dogInfo {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .dogProfile .dogInfo .avatarSection {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 10px;
+	padding-top: 10px;
+  }
+  
+  .dogProfile .dogInfo .avatarSection .profilePicture {
+	display: flex;
+	justify-content: center;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	overflow: hidden;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	border: 4px solid white;
+	background-color: white;
+  }
+  
+  @media screen and (max-width: 660px) {
+	.dogProfile .dogInfo .avatarSection .profilePicture {
+	  height: 150px;
+	  width: 150px;
+	}
+  }
+
+  .dogProfile .dogDescriptionTitle {
+	width: 70%;
+	font-family: "Inter", sans-serif;
+	color: #577590;
+	font-weight: 400;
+	margin-top: 32px;
+	margin-bottom: 6px;
+  }
+  
+  .dogDescriptionTitle {
+	text-align: left;
+  }
+  
+  .dogProfile .dogDescription {
+	width: 60%;
+  }
+  
+  .dogDescription {
+	text-align: left;
+  }
+  
